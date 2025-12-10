@@ -6,50 +6,6 @@ import EdurekaLogo from '../assets/logos/edureka.png';
 import NvidiaLogo from '../assets/logos/nvidia.png';
 
 
-// const Stats = () => {
-//   return (
-//     <section className="py-16 bg-gray-100 text-center">
-//       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        
-//         <div>
-//           <h2 className="text-4xl font-bold">120+</h2>
-//           <p className="text-gray-600 mt-2">Projects Completed</p>
-//         </div>
-
-//         <div>
-//           <h2 className="text-4xl font-bold">200+</h2>
-//           <p className="text-gray-600 mt-2">Happy Clients</p>
-//         </div>
-
-//         <div>
-//           <h2 className="text-4xl font-bold">30+</h2>
-//           <p className="text-gray-600 mt-2">Awards Won</p>
-//         </div>
-
-//         <div>
-//           <h2 className="text-4xl font-bold">50+</h2>
-//           <p className="text-gray-600 mt-2">Global Partners</p>
-//         </div>
-
-//       </div>
-
-//       {/* Client Logos */}
-//       <div className="flex items-center justify-between space-x-4 p-4">
-//         <img src={HitachiLogo} alt="Hitachi" className="h-8 sm:h-10 md:h-12 lg:h-16" />
-//         <img src={SbiLogo} alt="SBI" className="h-8 sm:h-10 md:h-12 lg:h-16" />
-//         <img src={MuoroLogo} alt="Muoro" className="h-8 sm:h-10 md:h-12 lg:h-16" />
-//         <img src={EdurekaLogo} alt="Edureka!" className="h-8 sm:h-10 md:h-12 lg:h-16" />
-//         <img src={NvidiaLogo} alt="Nvidia" className="h-8 sm:h-10 md:h-12 lg:h-16" />
-// </div>
-
-//     </section>
-//   );
-// };
-
-// export default Stats;
-
-
-
 const Stats = () => {
   return (
     <section className="py-20 bg-white">
@@ -94,8 +50,8 @@ const Stats = () => {
       {/* </div> */}
 
       {/* Logos */}
-      <div className="w-full flex justify-center mt-20">
-        <div className="max-w-[1748px] h-[76px] flex justify-between items-center px-8">
+      <div className="w-full flex flex-wrap justify-center items-center gap-10 mt-8 px-6">
+         {/* div className="max-w-[1748px] h-[76px] flex justify-between items-center px-8" */}
 
           <img src={HitachiLogo} className="w-[272.71px] h-[60.64px] object-contain" />
           <img src={MuoroLogo} className="w-[234.87px] h-[71.03px] object-contain" />
@@ -103,7 +59,7 @@ const Stats = () => {
           <img src={SbiLogo} className="w-[128.01px] h-[55.04px] object-contain" />
           <img src={NvidiaLogo} className="w-[203.7px] h-[70.51px] object-contain" />
 
-        </div>
+         {/* </div> */}
       </div>
 
     </section>
