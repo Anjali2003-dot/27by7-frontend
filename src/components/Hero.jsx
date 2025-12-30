@@ -1,5 +1,6 @@
 
 import React from "react";
+//import { Link } from "react-router-dom";
 import GlobeImage from "../assets/heroimage.png";
 const Hero = () => {
   return (
@@ -35,11 +36,15 @@ const Hero = () => {
           <button className="px-5 py-3 rounded-full bg-blue-600 text-white shadow">
             View Our Services
           </button>
-
+        {/* <Link to="/contact">   */}
           <button className="px-5 py-3 rounded-full bg-white border flex items-center gap-2">
             Contact Us
             <span className="text-blue-600">→</span>
           </button>
+        {/* </Link> */}
+          
+          
+          
         </div>
       </div>
 

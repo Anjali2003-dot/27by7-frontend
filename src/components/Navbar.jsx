@@ -57,6 +57,11 @@
 
 // export default Navbar;
 
+
+
+
+import MegaMenu from "./MegaMenu";
+
 import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -90,7 +95,17 @@ const Navbar = () => {
 
           {/* CENTER – Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-8 text-sm text-gray-800">
-            <li className="cursor-pointer hover:text-[#2D8CFF]">Services ▼</li>
+            <li className="relative group">
+  <button className="hover:text-blue-600 flex items-center gap-1">
+    Services <span>▼</span>
+  </button>
+
+  <div className="absolute left-0 top-full hidden group-hover:block mt-3 z-50">
+    <MegaMenu />
+  </div>
+</li>
+
+
             <li className="cursor-pointer hover:text-[#2D8CFF]">Industries ▼</li>
             <li className="cursor-pointer hover:text-[#2D8CFF]">Our Partners ▼</li>
             <li className="cursor-pointer hover:text-[#2D8CFF]">How We Work ▼</li>
